@@ -1,6 +1,6 @@
 # passwinlog
 
-This is the message text (.mc) file used to create the event manager dll for the logging function of the windows version of passwin.
+The message text (.mc) file included in this repository is used to create the event manager dll for the logging function of the windows version of passwin.
 
 
 
@@ -21,5 +21,7 @@ To create the resource-only DLL that contains the message table string resources
    link -dll -noentry passwinlog.res
 
 Notes:
-1) The mc step creates a passwinlog.h that will be needed when compiling passwin. In addition to the passwinlog.rc, it also creates the MSG00409.bin file which the passwinlog.rc regerences.
+1) The mc step creates a passwinlog.h that will be needed when compiling passwin.
 2) Be sure to include the -noentry option on the link command!
+3) The passwinlog.dll file needs to be registered so that windows will know where to find it.
+4) The passwinlog.reg file that I have included here is an example only. You will need to modify it to correspond to the location where you install passwinlog.dll.
