@@ -28,3 +28,4 @@ Notes:
 2) Be sure to include the -noentry option on the link command!
 3) The passwinlog.dll file needs to be registered so that windows will know where to find it.
 4) The passwinlog.reg file that I have included here is an example only. You will need to modify it to correspond to the location where you install passwinlog.dll.
+5) After importing the passwinlog.reg file, you may need to reboot Windows in order to get the event system to re-read the registry information.
