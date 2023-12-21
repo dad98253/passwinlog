@@ -8,6 +8,9 @@ To compile it:
 
 The .mc file is compiled into a .res file which is linked into a .dll:
 
+If you are using Visual Studio, open a "Developer Command Prompt" window (under Visyual Studio in your start menu).
+If you are using the Windows SDK with some other IDE, you will need to set your path to the appropriate tools folder.
+
 To compile the message text file, use the following command:
 
  mc -U passwinlog.mc
